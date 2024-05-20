@@ -136,7 +136,7 @@ About Area
                 height: 33px;
                 line-height: 31px;
                 text-align: center;
-                background: rgba(95, 45, 237, 0.04);
+                background: rgba(89, 196, 222, 0.04);
                 color: var(--primaryColor);
                 transition: var(--transition);
                 display: inline-block;
@@ -334,7 +334,7 @@ About Area
             text-transform: uppercase;
             color: var(--blackColor2);
             font-weight: 700;
-            box-shadow: 0 0 50px 10px rgba(95, 45, 237, 0.08);
+            box-shadow: 0 0 50px 10px rgba(89, 196, 222, 0.08);
             position: relative;
             @media #{$device-md} {
                 padding: 10px 40px;
@@ -409,7 +409,7 @@ About Area
         background: var(--whiteColor);
         border-radius: 6px;
         z-index: 11;
-        box-shadow: 0 0 20px 10px rgba(95, 45, 237, 0.05);
+        box-shadow: 0 0 20px 10px rgba(89, 196, 222, 0.05);
         .brandarea__img {
             margin: 45px 0;
             @media #{$device-lg} {
@@ -503,7 +503,7 @@ About Area
     background: var(--darkdeep3);
     margin: 0 150px;
     padding: 120px 0;
-    box-shadow: 0 0 50px 10px rgba(95, 45, 237, 0.1);
+    box-shadow: 0 0 50px 10px rgba(89, 196, 222, 0.1);
     border-radius: 20px;
     @media #{$device-xl} {
         margin: 0 50px;

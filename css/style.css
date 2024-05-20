@@ -69,19 +69,19 @@
   --whitegrey: #6A7C92;
   --whitegrey1: #EDEDED;
   --whitegrey2: #F2F6F7;
-  --whitegrey3: #E7DEFF;
+  --whitegrey3: #d2ebf1;
   --headingColor: #222222;
   --contentColor: #5F6C76;
   --contentColor2: #5C727D;
-  --primaryColor: #5F2DED;
-  --secondaryColor: #F2277E;
-  --secondaryColor2: #FF275A;
-  --secondaryColor3: #FF2828;
+  --primaryColor: #59c4de;
+  --secondaryColor: #293A8B;
+  --secondaryColor2: #293A8B;
+  --secondaryColor3: #293A8B;
   --blackColor: #000000;
   --blackColor2: #191B1E;
   --darkblack: #0C0E2B;
-  --darkcolor: #263546;
-  --darkgray: #9FA2CE;
+  --darkcolor: #1e3146;
+  --darkgray: #9cdeef;
   --deepgray: #202942;
   --lightGrey: #7B8696;
   --lightGrey2: #7B8697;
@@ -91,10 +91,10 @@
   --lightGrey8: #F0F1F3;
   --lightGrey6: #6D6E75;
   --lightGrey7: #F3F4FD;
-  --lightGrey9: #9F98B2;
-  --lightGrey10: #F5F5FE;
-  --lightGrey11: #F7F8FD;
-  --lightGrey12: #f0f4f7;
+  --lightGrey9: #a1b6bb;
+  --lightGrey10: #d0f4fe;
+  --lightGrey11: #e9faff;
+  --lightGrey12: #d0f4fe;
   --greencolor: #44CEA9;
   --greencolor2: #1EC902;
   --greencolor3: #2EC14A;
@@ -111,7 +111,7 @@
   --darkdeep5: #62605D;
   --darkdeep6: #7E8285;
   --darkdeep7: #C4C4C4;
-  --indigo: #B13BFF;
+  --indigo: #293A8B;
   --deepgreen: #133344;
   --deepblue: #505975;
   --deepred: #DC164D;
@@ -867,8 +867,8 @@ li {
   height: 100px;
   border-style: solid;
   border-width: 5px;
-  border-top-color: #465fe9;
-  border-right-color: #465fe9;
+  border-top-color: #59c4de;
+  border-right-color: #59c4de;
   border-bottom-color: #d5eaff;
   border-left-color: #d5eaff;
   border-radius: 50%;
@@ -933,18 +933,22 @@ Header Area
   left: 0;
   width: 100%;
   transition: 0.4s;
-  -webkit-box-shadow: 0 0 50px 10px rgba(95, 45, 237, 0.15);
-  -moz-box-shadow: 0 0 50px 10px rgba(95, 45, 237, 0.15);
-  box-shadow: 0 0 50px 10px rgba(95, 45, 237, 0.15);
+  -webkit-box-shadow: 0 0 50px 10px rgba(89, 196, 222, 0.15);
+  -moz-box-shadow: 0 0 50px 10px rgba(89, 196, 222, 0.15);
+  box-shadow: 0 0 50px 10px rgba(89, 196, 222, 0.15);
   animation: 300ms ease-in-out 0s normal none 1 running fadeInDown;
 }
 
 .headerarea .container {
   position: relative;
+  margin-top: 10px;
+  margin-bottom: 10px;
 }
 .headerarea__left {
   display: flex;
   height: 100%;
+  /* margin-top: 10px;
+  margin-top: 10px; */
   align-items: center;
 }
 @media (min-width: 1500px) and (max-width: 1920px) {
@@ -963,6 +967,7 @@ Header Area
   }
 }
 .headerarea__main__menu {
+  margin-top: 20px;
   text-align: center;
 }
 .headerarea__main__menu nav ul > li {
@@ -971,7 +976,8 @@ Header Area
 .headerarea__main__menu nav ul > li a {
   padding: 40px 20px;
   display: block;
-  font-size: 16px;
+  font-size: 24px;
+  text-transform: uppercase;
   font-weight: 600;
   position: relative;
   color: var(--blackColor);
@@ -1091,7 +1097,7 @@ Header Area
   padding: 20px;
   border-bottom: 3px solid var(--borderColor);
   background-color: var(--whiteColor);
-  box-shadow: 0 0 50px 10px rgba(95, 45, 237, 0.15);
+  box-shadow: 0 0 50px 10px rgba(89, 196, 222, 0.15);
   top: 120%;
   left: -117px;
   opacity: 0;
@@ -1693,7 +1699,7 @@ Mobile Menu
   padding: 40px 30px 50px;
   overflow: auto;
   height: 100%;
-  box-shadow: 0 0 50px 10px rgba(95, 45, 237, 0.1);
+  box-shadow: 0 0 50px 10px rgba(89, 196, 222, 0.1);
 }
 
 @media only screen and (max-width: 767px) {
@@ -2116,7 +2122,7 @@ Mobile Menu
   padding: 40px 30px 50px;
   overflow: auto;
   height: 100%;
-  box-shadow: 0 0 50px 10px rgba(95, 45, 237, 0.1);
+  box-shadow: 0 0 50px 10px rgba(89, 196, 222, 0.1);
 }
 
 @media only screen and (max-width: 767px) {
@@ -2507,7 +2513,7 @@ Hero Banner Area
 .hreobannerarea__button a.herobannerarea__button__1 {
   padding: 17px 30px;
   background: var(--whiteColor);
-  box-shadow: 0px 4px 13px 1px rgba(95, 45, 237, 0.16);
+  box-shadow: 0px 4px 13px 1px rgba(89, 196, 222, 0.16);
   border-radius: var(--borderRadius);
   transition: var(--transition);
   font-weight: 600;
@@ -2699,7 +2705,7 @@ Hero Banner Area
   margin-left: 70px;
   margin-right: 70px;
   border-radius: 15px;
-  box-shadow: 0 0 20px 10px rgba(95, 45, 237, 0.05);
+  box-shadow: 0 0 20px 10px rgba(89, 196, 222, 0.05);
 }
 @media (min-width: 992px) and (max-width: 1365px) {
   .herobannerarea__box {
@@ -3634,7 +3640,7 @@ Training Area
   width: 71.94px;
   height: 69.44px;
   line-height: 69.44px;
-  border: 1px solid rgba(95, 45, 237, 0.15);
+  border: 1px solid rgba(89, 196, 222, 0.15);
   text-align: center;
   border-radius: 100%;
   color: var(--primaryColor);
@@ -3805,7 +3811,7 @@ About Area
   height: 33px;
   line-height: 31px;
   text-align: center;
-  background: rgba(95, 45, 237, 0.04);
+  background: rgba(89, 196, 222, 0.04);
   color: var(--primaryColor);
   transition: var(--transition);
   display: inline-block;
@@ -4040,7 +4046,7 @@ About Area
   text-transform: uppercase;
   color: var(--blackColor2);
   font-weight: 700;
-  box-shadow: 0 0 50px 10px rgba(95, 45, 237, 0.08);
+  box-shadow: 0 0 50px 10px rgba(89, 196, 222, 0.08);
   position: relative;
 }
 @media (min-width: 768px) and (max-width: 991px) {
@@ -4116,7 +4122,7 @@ About Area
   background: var(--whiteColor);
   border-radius: 6px;
   z-index: 11;
-  box-shadow: 0 0 20px 10px rgba(95, 45, 237, 0.05);
+  box-shadow: 0 0 20px 10px rgba(89, 196, 222, 0.05);
 }
 .brandarea__wraper.brandarea__wraper__2 .brandarea__img {
   margin: 45px 0;
@@ -4216,7 +4222,7 @@ About Area
   background: var(--darkdeep3);
   margin: 0 150px;
   padding: 120px 0;
-  box-shadow: 0 0 50px 10px rgba(95, 45, 237, 0.1);
+  box-shadow: 0 0 50px 10px rgba(89, 196, 222, 0.1);
   border-radius: 20px;
 }
 @media (min-width: 1366px) and (max-width: 1499px) {
@@ -4362,7 +4368,7 @@ Popular Area
 
 .single__service {
   padding: 30px;
-  box-shadow: 0 0 50px 10px rgba(95, 45, 237, 0.1);
+  box-shadow: 0 0 50px 10px rgba(89, 196, 222, 0.1);
   margin-bottom: 30px;
   transition: var(--transition);
   position: relative;
@@ -4692,7 +4698,7 @@ Grid Area
 .gridarea__wraper {
   background: var(--whiteColor);
   padding: 15px;
-  box-shadow: 0 0 20px 10px rgba(95, 45, 237, 0.05);
+  box-shadow: 0 0 20px 10px rgba(89, 196, 222, 0.05);
   margin-bottom: 30px;
 }
 .gridarea__wraper.gridarea__wraper__2 .gridarea__content .gridarea__heading h3 {
@@ -7010,7 +7016,7 @@ Instructor Area
   width: 34px;
   line-height: 34px;
   display: inline-block;
-  background: rgba(95, 45, 237, 0.04);
+  background: rgba(89, 196, 222, 0.04);
   border-radius: 100%;
   color: var(--primaryColor);
 }
@@ -7156,7 +7162,7 @@ Instructor Area
 Blog
 -------------------------------*/
 .single__blog__wraper {
-  box-shadow: 0 0 50px 10px rgba(95, 45, 237, 0.1);
+  box-shadow: 0 0 50px 10px rgba(89, 196, 222, 0.1);
 }
 
 .blogarea__content__wraper {
@@ -7401,7 +7407,7 @@ Blog
 
 .blog__content__wraper__2 {
   margin-bottom: 35px;
-  box-shadow: 0 0 50px 10px rgba(95, 45, 237, 0.05);
+  box-shadow: 0 0 50px 10px rgba(89, 196, 222, 0.05);
 }
 .blog__content__wraper__2 .blogarea__text__wraper__2 {
   padding: 26px 30px 20px 30px;
@@ -8784,7 +8790,7 @@ Course
   border: none;
   background: var(--whiteColor);
   color: var(--blackColor);
-  box-shadow: 0 0 50px 10px rgba(95, 45, 237, 0.1);
+  box-shadow: 0 0 50px 10px rgba(89, 196, 222, 0.1);
 }
 @media (min-width: 992px) and (max-width: 1365px) {
   .course__tap__wrap li button {
@@ -9402,7 +9408,7 @@ Error
 .loginarea__wraper {
   padding: 31px 50px 50px;
   border-radius: 5px;
-  box-shadow: 0 0 50px 10px rgba(95, 45, 237, 0.1);
+  box-shadow: 0 0 50px 10px rgba(89, 196, 222, 0.1);
 }
 @media (max-width: 767px) {
   .loginarea__wraper {
@@ -10872,7 +10878,7 @@ Breadcrumb Area
 }
 .dashboard__inner {
   padding: 20px 30px 30px;
-  box-shadow: 0 0 20px 10px rgba(95, 45, 237, 0.02);
+  box-shadow: 0 0 20px 10px rgba(89, 196, 222, 0.02);
   background: var(--whiteColor);
   border-radius: var(--borderRadius3);
 }
@@ -10924,7 +10930,7 @@ Breadcrumb Area
   margin-right: 10px;
 }
 .dashboard__content__wraper {
-  box-shadow: 0 0 20px 10px rgba(95, 45, 237, 0.02);
+  box-shadow: 0 0 20px 10px rgba(89, 196, 222, 0.02);
   padding: 50px 40px;
   background: var(--whiteColor);
   margin-bottom: 30px;
@@ -10951,7 +10957,7 @@ Breadcrumb Area
   background: var(--lightGrey5);
   margin-bottom: 20px;
   border-radius: var(--borderRadius3);
-  box-shadow: 0 0 1px 1px rgba(95, 45, 237, 0.2);
+  box-shadow: 0 0 1px 1px rgba(89, 196, 222, 0.2);
 }
 @media (max-width: 767px) {
   .dashboard__single__counter {
@@ -11345,7 +11351,7 @@ Breadcrumb Area
   margin-bottom: 20px;
   background: var(--whiteColor);
   border: none;
-  box-shadow: 0 0 20px 10px rgba(95, 45, 237, 0.02);
+  box-shadow: 0 0 20px 10px rgba(89, 196, 222, 0.02);
 }
 .create__course__accordion__wraper .accordion-item h2 {
   padding: 20px 30px;
@@ -11450,7 +11456,7 @@ Breadcrumb Area
 .dashboard__admin__report__wrap {
   display: flex;
   justify-content: center;
-  box-shadow: 0 0 20px 10px rgba(95, 45, 237, 0.02);
+  box-shadow: 0 0 20px 10px rgba(89, 196, 222, 0.02);
   background: var(--whiteColor);
   padding: 40px 20px;
   border-radius: var(--borderRadius2);
@@ -12403,7 +12409,7 @@ Dark Mode
   fill: var(--blackColor);
 }
 .is_dark .gridarea__wraper {
-  box-shadow: 0 0 20px 10px rgba(95, 45, 237, 0.1);
+  box-shadow: 0 0 20px 10px rgba(89, 196, 222, 0.1);
 }
 .is_dark .registerarea__section__title .section__title__heading h2 {
   color: var(--blackColor);
@@ -12412,7 +12418,7 @@ Dark Mode
   color: var(--blackColor);
 }
 .is_dark .registerarea__form {
-  box-shadow: 0 0 20px 10px rgba(95, 45, 237, 0.1);
+  box-shadow: 0 0 20px 10px rgba(89, 196, 222, 0.1);
   background: var(--naveBlue);
 }
 .is_dark .single__event__wraper:hover {
@@ -12535,13 +12541,13 @@ Dark Mode
 .is_dark #scrollUp {
   background: var(--primaryColor);
   color: var(--blackColor);
-  box-shadow: 0 0 20px 10px rgba(95, 45, 237, 0.1);
+  box-shadow: 0 0 20px 10px rgba(89, 196, 222, 0.1);
 }
 .is_dark .blogarae__img__2 .blogarea__date__2 {
   color: var(--blackColor);
 }
 .is_dark .blog__content__wraper__2 {
-  box-shadow: 0 0 50px 10px rgba(95, 45, 237, 0.15);
+  box-shadow: 0 0 50px 10px rgba(89, 196, 222, 0.15);
 }
 .is_dark .main__pagination__wrapper ul li a.active {
   color: var(--secondaryColor);
@@ -12564,7 +12570,7 @@ Dark Mode
 }
 .is_dark .is_dark .topbararea {
   background: var(--lightGrey10);
-  box-shadow: 0 0 50px 10px rgba(95, 45, 237, 0.1);
+  box-shadow: 0 0 50px 10px rgba(89, 196, 222, 0.1);
 }
 .is_dark .topbar__left ul li {
   color: var(--blackColor);
@@ -12577,7 +12583,7 @@ Dark Mode
 }
 .is_dark .contact__form__inner {
   border: none;
-  box-shadow: 0 0 50px 10px rgba(95, 45, 237, 0.1);
+  box-shadow: 0 0 50px 10px rgba(89, 196, 222, 0.1);
 }
 .is_dark .course__categories__list ul li a:hover {
   color: var(--blackColor);
@@ -12614,7 +12620,7 @@ Dark Mode
 }
 .is_dark .add__a__review__wrapper {
   background-color: transparent;
-  box-shadow: 0 0 20px 10px rgba(95, 45, 237, 0.1);
+  box-shadow: 0 0 20px 10px rgba(89, 196, 222, 0.1);
 }
 .is_dark .add__a__review__wrapper .add__a__review__input input {
   border: 1px solid var(--blackColor);
@@ -12663,7 +12669,7 @@ Dark Mode
   background-color: var(--bodyBg);
 }
 .is_dark .blogarea__content__wraper {
-  box-shadow: 0 0 50px 10px rgba(95, 45, 237, 0.1);
+  box-shadow: 0 0 50px 10px rgba(89, 196, 222, 0.1);
 }
 .is_dark .blogsidebar__content__wraper__2 .recent__list li .recent__img .recent__number span {
   color: var(--blackColor);
@@ -12740,16 +12746,16 @@ Dark Mode
 .is_dark .dashboard__content__wraper,
 .is_dark .dashboard__admin__report__wrap,
 .is_dark .dashboard__inner {
-  box-shadow: 0 0 1px 1px rgba(95, 45, 237, 0.2);
+  box-shadow: 0 0 1px 1px rgba(89, 196, 222, 0.2);
 }
 .is_dark .modal__wraper .btn-close {
   background-color: var(--blackColor);
 }
 .is_dark .create__course__accordion__wraper .accordion-item {
-  box-shadow: 0 0 1px 1px rgba(95, 45, 237, 0.2);
+  box-shadow: 0 0 1px 1px rgba(89, 196, 222, 0.2);
 }
 .is_dark .shopsidebar__widget {
-  box-shadow: 0 0 1px 1px rgba(95, 45, 237, 0.2);
+  box-shadow: 0 0 1px 1px rgba(89, 196, 222, 0.2);
 }
 .is_dark .dashboard__table table thead {
   background: var(--whiteColor);

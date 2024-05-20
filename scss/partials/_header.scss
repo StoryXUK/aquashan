@@ -11,9 +11,9 @@ Header Area
     left: 0;
     width: 100%;
     transition: .4s;
-    -webkit-box-shadow: 0 0 50px 10px rgba(95, 45, 237, 0.15);
-    -moz-box-shadow: 0 0 50px 10px rgba(95, 45, 237, 0.15);
-    box-shadow: 0 0 50px 10px rgba(95, 45, 237, 0.15);
+    -webkit-box-shadow: 0 0 50px 10px rgba(89, 196, 222, 0.15);
+    -moz-box-shadow: 0 0 50px 10px rgba(89, 196, 222, 0.15);
+    box-shadow: 0 0 50px 10px rgba(89, 196, 222, 0.15);
     animation: 300ms ease-in-out 0s normal none 1 running fadeInDown;
 }
 
@@ -172,7 +172,7 @@ Header Area
                 padding: 20px;
                 border-bottom: 3px solid var(--borderColor);
                 background-color: var(--whiteColor);
-                box-shadow: 0 0 50px 10px rgba(95, 45, 237, 0.15);
+                box-shadow: 0 0 50px 10px rgba(89, 196, 222, 0.15);
                 top: 120%;
                 left: -117px;
                 opacity: 0;
